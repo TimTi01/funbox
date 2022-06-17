@@ -3,6 +3,7 @@ import { Card } from './Components/Card/Card';
 import { Container } from './Components/Container/Container';
 import { Header } from './Components/Header/Header';
 import { Main } from './Components/Section/Main';
+import  data  from './Data/data.json'
 
 function App() {
   return (
@@ -10,9 +11,15 @@ function App() {
       <Header/>
       <Main>
         <Container>
-          <Card/>
-          <Card/>
-          <Card/>
+          {data.cards.map((card) => (
+            <Card key={card.id}
+                  subtitle={card.subtitle}
+                  title={card.title}
+                  taste={card.taste}
+                  list={card.list}
+                  circleNum={card.circleNum}
+            />
+          ))}
         </Container>
       </Main>
     </div>

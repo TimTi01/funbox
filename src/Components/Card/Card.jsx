@@ -1,19 +1,20 @@
 import React from 'react'
 import './cardStyles.scss'
 
-export const Card = () => {
+export const Card = ({ subtitle, title, taste, list, circleNum}) => {
   return (
-    <article className='Main__Card'>
+    <article className='Main__Card' >
         <div className='Card__Content'>
-          <p className='Content__Subtitle'>Сказочное заморское яство</p>
-          <h2 className='Content__Title'>Нямушка</h2>
-          <p className='Content__Taste'>с фуа-гра</p>
+          <p className='Content__Subtitle'>{subtitle}</p>
+          <h2 className='Content__Title'>{title}</h2>
+          <p className='Content__Taste'>{taste}</p>
           <ul className='Content__List'>
-            <li>10 порции</li>
-            <li>мышь в подарок</li>
+            {list.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
           <div className='Content__Circle'>
-              <span className='Circle__Num'>0,5</span>
+              <span className='Circle__Num'>{circleNum}</span>
               <span className='Circle__Wt'>кг</span>
           </div>
         </div>
