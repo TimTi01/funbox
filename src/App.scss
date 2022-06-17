@@ -1,0 +1,10 @@
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("./images/Pattern.png");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: cover;
+}
