@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Trebuchet MS";
+    src: url(../../assets/fonts/trebuchetms.eot), 
+         url(../../assets/fonts/trebuchetms.otf) 
+         format("truetype");
+}
+
 .Main__Card {
     min-height: 509px;
     min-width: 320px;
@@ -31,13 +38,17 @@
         }
 
         .Content__Subtitle {
-            margin: 18px 0 0 0;
+            font-family: "Trebuchet MS";
             color: #666666;
+            font-size: 16px;
+            margin: 18px 0 0 0;
         }
 
         .Content__Title {
             margin: 0;
             font-size: 48px;
+            font-weight: 700;
+            font-family: "Trebuchet MS";
             margin-top: 6px;
             margin-left: -3px;
         }
@@ -46,6 +57,8 @@
             margin: 0;
             margin-top: -2px;
             font-size: 24px;
+            font-weight: 700;
+            font-family: "Trebuchet MS";
             letter-spacing: .02em;
             margin-left: -2px;
         }
@@ -54,6 +67,8 @@
             padding: 0;
             color: #666;
             list-style-type: none;
+            font-size: 14px;
+            font-weight: 400;
         }
 
         .Content__Circle {
@@ -64,19 +79,28 @@
             background-color: #1698D9;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-around;
             flex-direction: column;
             width: 80px;
             height: 80px;
             color: #fff;
 
             .Circle__Num {
+                font-family: Trebuchet MS;
+                font-size: 42px;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: 0px;
                 margin: 0;
                 margin-top: 7px;
                 font-size: 42px;
             }
 
             .Circle__Wt {
+                font-family: Trebuchet MS;
+                font-size: 42px;
+                font-weight: 400;
+                line-height: 22px;
                 margin: 0;
                 margin-top: -6px;
                 font-size: 20px;
