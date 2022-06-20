@@ -10,103 +10,169 @@
     min-width: 320px;
     width: 320px;
 
-    .Card__Content {
-        height: 473px;
-        border: 4px solid #1698D9;
-        position: relative;
-        padding-left: 47px;
+    .Card__Content--background {
         background-color: #F2F2F2;
-        background-image: url(../../images/Photo.png);
-        background-repeat: no-repeat;
-        background-position: -30px 215px;
-        background-size: 350px;
         border-radius: 12px;
         -webkit-clip-path: polygon(14% 0,100% 0,100% 100%,0 100%,0% 9%);
         clip-path: polygon(14% 0,100% 0,100% 100%,0 100%,0% 9%);
-        cursor: pointer;
 
-        &::before {
-            display: block;
-            position: absolute;
-            content: '';
-            width: 6px;
-            height: 70px;
-            top: -15px;
-            left: 15px;
-            background: #1698D9;
-            transform: rotate(45deg);
-        }
-
-        .Content__Subtitle {
-            font-family: "Trebuchet MS";
-            color: #666666;
-            font-size: 16px;
-            margin: 18px 0 0 0;
-        }
-
-        .Content__Title {
-            margin: 0;
-            font-size: 48px;
-            font-weight: 700;
-            font-family: "Trebuchet MS";
-            margin-top: 6px;
-            margin-left: -3px;
-        }
-
-        .Content__Taste {
-            margin: 0;
-            margin-top: -2px;
-            font-size: 24px;
-            font-weight: 700;
-            font-family: "Trebuchet MS";
-            letter-spacing: .02em;
-            margin-left: -2px;
-        }
-
-        .Content__List {
-            padding: 0;
-            color: #666;
-            list-style-type: none;
-            font-size: 14px;
-            font-weight: 400;
-        }
-
-        .Content__Circle {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            border-radius: 50%;
-            background-color: #1698D9;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            flex-direction: column;
-            width: 80px;
-            height: 80px;
-            color: #fff;
-
-            .Circle__Num {
-                font-family: Trebuchet MS;
-                font-size: 42px;
-                font-weight: 400;
-                line-height: 22px;
-                letter-spacing: 0px;
+        .Card__Content {
+            height: 473px;
+            border: 4px solid #1698D9;
+            position: relative;
+            padding-left: 47px;
+            background-color: #F2F2F2;
+            background-image: url(../../assets/images/Photo.png);
+            background-repeat: no-repeat;
+            background-position: -30px 215px;
+            background-size: 350px;
+            border-radius: 12px;
+            -webkit-clip-path: polygon(14% 0,100% 0,100% 100%,0 100%,0% 9%);
+            clip-path: polygon(14% 0,100% 0,100% 100%,0 100%,0% 9%);
+            cursor: pointer;
+    
+            &::before {
+                display: block;
+                position: absolute;
+                content: '';
+                width: 6px;
+                height: 70px;
+                top: -15px;
+                left: 15px;
+                background: #1698D9;
+                transform: rotate(45deg);
+            }
+    
+            .Content__Subtitle {
+                font-family: "Trebuchet MS";
+                color: #666666;
+                font-size: 16px;
+                margin: 18px 0 0 0;
+            }
+    
+            .Content__Title {
                 margin: 0;
-                margin-top: 7px;
-                font-size: 42px;
+                font-size: 48px;
+                font-weight: 700;
+                font-family: "Trebuchet MS";
+                margin-top: 6px;
+                margin-left: -3px;
+            }
+    
+            .Content__Taste {
+                margin: 0;
+                margin-top: -2px;
+                font-size: 24px;
+                font-weight: 700;
+                font-family: "Trebuchet MS";
+                letter-spacing: .02em;
+                margin-left: -2px;
+            }
+    
+            .Content__List {
+                padding: 0;
+                color: #666;
+                list-style-type: none;
+                font-size: 14px;
+                font-weight: 400;
+            }
+    
+            .Content__Circle {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                border-radius: 50%;
+                background-color: #1698D9;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                width: 80px;
+                height: 80px;
+                color: #fff;
+    
+                .Circle__Num {
+                    font-family: Trebuchet MS;
+                    font-size: 42px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    letter-spacing: 0px;
+                    margin: 0;
+                    margin-top: 7px;
+                    font-size: 42px;
+                }
+    
+                .Circle__Wt {
+                    font-family: Trebuchet MS;
+                    font-size: 42px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    margin: 0;
+                    margin-top: -6px;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .Card__Content--active {
+            border: 4px solid #E52E7A;
+    
+            &::before {
+                background: #E52E7A;
+            }
+    
+            .Content__Circle {
+                background-color: #E52E7A;
+            }
+        }
+
+        
+        .Card__Content--hoverAction {
+            border: 4px solid #2EA8E6;
+
+            .Content__Circle {
+                background: #2EA8E6;
             }
 
-            .Circle__Wt {
-                font-family: Trebuchet MS;
-                font-size: 42px;
-                font-weight: 400;
-                line-height: 22px;
-                margin: 0;
-                margin-top: -6px;
-                font-size: 20px;
+            &::before {
+                background: #2EA8E6;
+            }
+        }
+
+        .Card__Content--hoverNotAction {
+            border: 4px solid #D91667;
+
+            .Content__Circle {
+                background: #D91667;
+            }
+
+            &::before {
+                background: #D91667;
+            }
+        }
+
+        .Card__Content--disabled {
+            cursor: default;
+            border: 4px solid #B3B3B3;
+            opacity: .5;
+        
+            &::before {
+                background: #B3B3B3;
+            }
+        
+            .Content__Subtitle,
+            .Content__Title,
+            .Content__Taste,
+            .Content__List {
+                color: #B3B3B3;
+            }
+
+            .Content__Circle {
+                background-color: #B3B3B3;
             }
         }
     }
+
 
     .Card__TextBottom {
         margin-top: 14px;

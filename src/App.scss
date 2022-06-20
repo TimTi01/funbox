@@ -1,10 +1,9 @@
 .App {
-  height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  background-image: url("./images/Pattern.png");
-  background-position: center center;
-  background-repeat: repeat;
-  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url("./assets/images/Pattern.png");
 }

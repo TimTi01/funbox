@@ -1,5 +1,8 @@
 .AppMain {
+    max-width: 1120px;
     display: flex;
-    justify-content: space-evenly;
-    margin: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px 80px;
 }

@@ -14,10 +14,13 @@ function App() {
           {data.cards.map((card) => (
             <Card key={card.id}
                   subtitle={card.subtitle}
+                  subtitleHover={card.subtitleHover}
                   title={card.title}
                   taste={card.taste}
                   list={card.list}
                   circleNum={card.circleNum}
+                  buttomText={card.buttomText}
+                  cardDisabled={card.disabled}
             />
           ))}
         </Container>
