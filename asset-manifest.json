@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/funbox/static/css/main.409e5d67.css",
+    "main.js": "/funbox/static/js/main.e0a02ddb.js",
+    "static/media/Photo.png": "/funbox/static/media/Photo.5a59a8dfb85bee52c6a8.png",
+    "static/media/trebuchetms.eot": "/funbox/static/media/trebuchetms.24153f07e89878996358.eot",
+    "static/media/trebuchetms.otf": "/funbox/static/media/trebuchetms.57d59a07b358379756b0.otf",
+    "static/media/Pattern.png": "/funbox/static/media/Pattern.8b93e2127ee44e2a8146.png",
+    "static/media/Exo2.0-Thin.eot": "/funbox/static/media/Exo2.0-Thin.426284c17e5fa40b305a.eot",
+    "static/media/Exo2.0-Thin.otf": "/funbox/static/media/Exo2.0-Thin.51c257bfa8ec3e0cfb4b.otf",
+    "index.html": "/funbox/index.html",
+    "main.409e5d67.css.map": "/funbox/static/css/main.409e5d67.css.map",
+    "main.e0a02ddb.js.map": "/funbox/static/js/main.e0a02ddb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.409e5d67.css",
+    "static/js/main.e0a02ddb.js"
+  ]
+}
